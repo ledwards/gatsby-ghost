@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://ledwards-ghost.herokuapp.com/",
+    "apiUrl": "https://ledwards-ghost.herokuapp.com",
     "contentApiKey": "508db9abf9f0fdc705978146d2"
   },
   "production": {
-    "apiUrl": "https://ledwards-ghost.herokuapp.com/",
+    "apiUrl": "https://ledwards-ghost.herokuapp.com",
     "contentApiKey": "508db9abf9f0fdc705978146d2"
   }
 }
