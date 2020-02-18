@@ -14,6 +14,7 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+    const date = new Date(post.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 
     return (
         <>
@@ -34,6 +35,7 @@ const Post = ({ data, location }) => {
                             </figure> : null }
                         <section className="post-full-content">
                             <h1 className="content-title">{post.title}</h1>
+                            <p>{date}</p>
 
                             {/* The main post content */ }
                             <section
