@@ -27,6 +27,9 @@ const Author = ({ data, location, pageContext }) => {
             <Layout>
                 <div className="container">
                     <header className="author-header">
+                        <div className="author-header-image">
+                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
+                        </div>
                         <div className="author-header-content">
                             <h1>{author.name}</h1>
                             {author.bio && <p>{author.bio}</p>}
@@ -38,9 +41,6 @@ const Author = ({ data, location, pageContext }) => {
                                 <a className="author-header-item" href="https://github.com/ledwards" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 <a className="author-header-item" href="https://root.vc" target="_blank" rel="noopener noreferrer">root.vc</a>
                             </div>
-                        </div>
-                        <div className="author-header-image">
-                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
                         </div>
                     </header>
                     <section>

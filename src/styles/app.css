@@ -893,11 +893,15 @@ h6 {
 
 .author-header-image {
     flex: 0 0 auto;
-    margin: 0 0 0 4vw;
+    margin: 0 4vw 0 0;
     height: 120px;
     width: 120px;
     border-radius: 100%;
     overflow: hidden;
+}
+
+.author-header-content {
+    overflow: auto;
 }
 
 .author-header-meta {
@@ -1105,4 +1109,26 @@ h6 {
     line-height: 1.5em;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.kg-embed-card iframe {
+    position: static !important;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .kg-embed-card iframe {
+        -moz-transform: scale(0.7, 0.7); 
+        -webkit-transform: scale(0.7, 0.7); 
+        -o-transform: scale(0.7, 0.7);
+        -ms-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7); 
+        -moz-transform-origin: top left;
+        -webkit-transform-origin: top left;
+        -o-transform-origin: top left;
+        -ms-transform-origin: top left;
+        transform-origin: top left;
+        margin: 0 0 -100px -15px;
+      }
 }
