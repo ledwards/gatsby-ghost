@@ -4,24 +4,33 @@ import { Link } from 'gatsby'
 import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
+
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
+    const date = new Date(post.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 
     return (
         <Link to={url} className="post-card">
-            <header className="post-card-header">
-                <div className="post-card-footer-left">
-                    {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
-                    {post.featured && <span>Featured</span>}
-                    <h2 className="post-card-title">{post.title}</h2>
-                </div>
-                <div className="post-card-header-right">
-                    <div>{readingTime}</div>
+            <header>
+                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
+                {post.featured && <span>Featured</span>}
+                <h2 className="post-card-title">{post.title}</h2>
+                <div className="post-card-subhead">
+                    <div className="post-card-subhead-left">
+                        <div>{date}</div>
+                    </div>
+                    <div className="post-card-subhead-right">
+                        <div>{readingTime}</div>
+                    </div>
                 </div>
             </header>
             <section className="post-card-excerpt">{post.excerpt}</section>
             <footer className="post-card-footer">
+                <div className="post-card-footer-left">
+                </div>
+                <div className="post-card-footer-right">
+                </div>
             </footer>
         </Link>
     )
