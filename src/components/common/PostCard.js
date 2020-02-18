@@ -14,11 +14,10 @@ const PostCard = ({ post }) => {
         <Link to={url} className="post-card">
             <header>
                 {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
-                {post.featured && <span>Featured</span>}
                 <h2 className="post-card-title">{post.title}</h2>
                 <div className="post-card-subhead">
                     <div className="post-card-subhead-left">
-                        <div>{date}</div>
+                        <div>{date}{post.featured && <span> &mdash; Featured</span>}</div>
                     </div>
                     <div className="post-card-subhead-right">
                         <div>{readingTime}</div>

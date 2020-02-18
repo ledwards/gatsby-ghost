@@ -34,17 +34,33 @@ const Author = ({ data, location, pageContext }) => {
                                 {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                                <a className="author-header-item" href="https://www.linkedin.com/in/leeredwards" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a className="author-header-item" href="https://instagram.com/terronk" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                <a className="author-header-item" href="https://github.com/ledwards" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
                         </div>
                         <div className="author-header-image">
                             {author.profile_image && <img src={author.profile_image} alt={author.name} />}
                         </div>
                     </header>
-                    <section className="post-feed">
-                        {posts.map(({ node }) => (
-                            // The tag below includes the markup for each post - components/common/PostCard.js
-                            <PostCard key={node.id} post={node} />
-                        ))}
+                    <section>
+                        <h2>Interviews</h2>
+                        <ul>
+                            <li><a href="https://vchunting.com/lee-edwards">VC Hunting - My First Year at Root</a></li>
+                            <li><a href="https://corecursive.com/043-lee-edwards-developer-tools">Corecursive - Investing in Open Source</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=k4hZxxGHdjI&feature=youtu.be">Sand Hill Road - Financing Hard Tech</a></li>
+                            <li><a href="https://podcasts.apple.com/us/podcast/episode-4-what-is-hard-tech-or-deep-tech-why-are-companies/id1477671920?i=1000449154107">Disruptive Innovation - Hard Tech Startups</a></li>
+                            <li><a href="https://podcasts.apple.com/us/podcast/requests-for-startups-hard-tech-trae-vassallo-lee-edwards/id1316769266?i=1000444589418">Village Global - Hard Tech w/ Trae Vasallo</a></li>
+                            <li><a href="https://podtail.com/podcast/the-neolib-podcast/getting-to-the-root-of-venture-capital-ft-lee-edwa">Neoliberal Podcast - What is Venture Capital?</a></li>
+                            <li><a href="https://podcasts.apple.com/ie/podcast/episode-25-the-future-of-consumer-products/id1316769266?i=1000414303169">Village Global - CPG & DTC w/ Nikki Quinn</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>In Media</h2>
+                        <ul>
+                            <li><a href="https://www.businessinsider.com/i-tried-barrys-bootcamp-a-vc-favorite-intense-fitness-program-2019-5">I Tried Barry's Bootcamp</a></li>
+                            <li><a href="https://www.inc.com/jessica-stillman/this-tiny-college-produces-5-times-more-entreprene.html">This Tiny College Produces 5 Times as Many Entrepreneurs as Stanford</a></li>
+                        </ul>
                     </section>
                     <Pagination pageContext={pageContext} />
                 </div>
