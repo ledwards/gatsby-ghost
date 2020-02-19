@@ -57,6 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const authors = result.data.allGhostAuthor.edges
     const pages = result.data.allGhostPage.edges
     const posts = result.data.allGhostPost.edges
+    const featured = result.data.allGhostPost.edges
 
     // Load templates
     const indexTemplate = path.resolve(`./src/templates/index.js`)
@@ -64,6 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const authorTemplate = path.resolve(`./src/templates/author.js`)
     const pageTemplate = path.resolve(`./src/templates/page.js`)
     const postTemplate = path.resolve(`./src/templates/post.js`)
+    const featuredTemplate = path.resolve(`./src/templates/featured.js`)
 
     // Create tag pages
     tags.forEach(({ node }) => {
@@ -183,6 +185,21 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug: node.slug,
             },
         })
+    })
+
+    // Create featured page
+    createPage({
+        path: '/featured',
+        component: featuredTemplate,
+        context: {
+            slug: 'featured',
+            limit: 1,
+            skip: 0,
+            numberOfPages: 1,
+            humanPageNumber: 1,
+            prevPageNumber: 1,
+            nextPageNumber: 2,
+        },
     })
 
     // Create pagination

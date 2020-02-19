@@ -35,8 +35,6 @@ const Author = ({ data, location, pageContext }) => {
                             {author.bio && <p>{author.bio}</p>}
                             <div className="author-header-meta">
                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
-                                {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
-                                <a className="author-header-item" href="https://instagram.com/terronk" target="_blank" rel="noopener noreferrer">Instagram</a>
                                 <a className="author-header-item" href="https://www.linkedin.com/in/leeredwards" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                                 <a className="author-header-item" href="https://github.com/ledwards" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 <a className="author-header-item" href="https://root.vc" target="_blank" rel="noopener noreferrer">root.vc</a>
@@ -56,7 +54,7 @@ const Author = ({ data, location, pageContext }) => {
                         </ul>
                     </section>
                     <section>
-                        <h2>In Media</h2>
+                        <h2>in Media</h2>
                         <ul>
                             <li><a href="https://www.businessinsider.com/i-tried-barrys-bootcamp-a-vc-favorite-intense-fitness-program-2019-5">I Tried Barry's Bootcamp</a></li>
                             <li><a href="https://www.inc.com/jessica-stillman/this-tiny-college-produces-5-times-more-entreprene.html">This Tiny College Produces 5 Times as Many Entrepreneurs as Stanford</a></li>
