@@ -41,7 +41,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                                 <div className="site-mast-right">
                                     { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                    <a className="site-nav-item" href="#subscribe"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="Subscribe to Newsletter" /></a>
                                 </div>
                             </div>
                             { isHome ?
@@ -77,10 +77,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Link to="/">{site.title}</Link>
                             </div>
                             <div className="site-foot-nav-right">
+                                <a name="subscribe" className="hidden"></a>
                                 <form name="Subscribe Form" method="POST" data-netlify="true">
                                     <input type="hidden" name="form-name" value="Subscribe Form" />
-                                    <input type="email" name="email" placeholder="email to subscribe" />
-                                    <button type="submit" className="site-nav-button">Send</button>
+                                    <input type="email" name="email" placeholder="email address" />
+                                    <button type="submit" className="site-nav-button">Subscribe</button>
                                 </form>
                             </div>
                         </div>

@@ -284,6 +284,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 input[type="email"] {
     border-radius: 5px;
+    padding: 3px 3px 3px 5px;
 }
 legend {
     padding: 0;
@@ -518,6 +519,10 @@ h6 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* Layout

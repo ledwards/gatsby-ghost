@@ -21,6 +21,10 @@ const Index = ({ data, location, pageContext }) => {
             <MetaData location={location} />
             <Layout isHome={true}>
                 <div className="container">
+                    <header className="tag-header">
+                        <h1>Latest Posts</h1>
+                        <p>daily 30-minute thoughts</p>
+                    </header>
                     <section className="post-feed">
                         {posts.map(({ node }) => (
                             // The tag below includes the markup for each post - components/common/PostCard.js
