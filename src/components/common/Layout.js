@@ -77,7 +77,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Link to="/">{site.title}</Link>
                             </div>
                             <div className="site-foot-nav-right">
-                                <Navigation data={site.navigation} navClass="site-foot-nav-item" />
+                                <form name="Subscribe Form" method="POST" data-netlify="true">
+                                    <input type="hidden" name="form-name" value="Subscribe Form" />
+                                    <input type="email" name="email" placeholder="email to subscribe" />
+                                    <button type="submit" className="site-nav-button">Send</button>
+                                </form>
                             </div>
                         </div>
                     </footer>
