@@ -11,8 +11,8 @@ const ImageMeta = ({ image }) => {
     return (
         <Helmet>
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:image" content='./images/lee-af.png' />
-            <meta property="og:image" content='./images/lee-af.png' />
+            <meta name="twitter:image" content='https://lee.af/images/lee-af.png' />
+            <meta property="og:image" content='https://lee.af/images/lee-af.png' />
             <meta property="og:image:width" content='1200px' />
             <meta property="og:image:height" content='630px' />
         </Helmet >

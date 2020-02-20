@@ -16,7 +16,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
 
     shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null
 
-    description = description || data.meta_description || data.description || config.siteDescriptionMeta || settings.description
+    description = description || data.meta_description || data.description || settings.description || config.siteDescriptionMeta
     title = `${title || data.meta_title || data.name || data.title}`
 
     const jsonLd = {
