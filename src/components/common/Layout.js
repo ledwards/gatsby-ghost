@@ -77,7 +77,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 Subscribe to the lee.af Newsletter
                             </div>
                             <div className="site-foot-nav-right">
-                                <a name="subscribe" className="hidden"></a>
+                                <a name="subscribe"></a>
                                 <form name="Subscribe Form" method="POST" data-netlify="true">
                                     <input type="hidden" name="form-name" value="Subscribe Form" />
                                     <input type="email" name="email" placeholder="email address" />
