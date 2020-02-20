@@ -74,7 +74,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link>
+                                Subscribe to the lee.af Newsletter
                             </div>
                             <div className="site-foot-nav-right">
                                 <a name="subscribe" className="hidden"></a>

@@ -981,7 +981,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-foot {
-    padding: 20px 0 40px 0;
+    padding: 20px 0 20px 0;
     color: rgba(255,255,255,0.7);
     font-family: monospace;
     font-size: 2rem;
@@ -991,7 +991,16 @@ h6 {
 .site-foot-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .site-foot-nav-left {
+        display:none;
+    }
+    input[name="email"] {
+        width: 249px;
+    }
 }
 
 .site-foot-nav a {
@@ -1001,6 +1010,10 @@ h6 {
 .site-foot-nav a:hover {
     text-decoration: none;
     color: rgba(255,255,255,1);
+}
+
+.site-foot-nav-left {
+    margin-right: 2vw;
 }
 
 .site-foot-nav-right a {
