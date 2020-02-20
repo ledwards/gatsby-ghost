@@ -24,7 +24,7 @@ const PostCard = ({ post }) => {
                     </div>
                 </div>
             </header>
-            <section className="post-card-excerpt">{post.excerpt}</section>
+            <section className="post-card-excerpt">{post.excerpt}...</section>
             <footer className="post-card-footer">
                 <div className="post-card-footer-left">
                 </div>
