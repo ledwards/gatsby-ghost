@@ -73,11 +73,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     {/* The footer at the very bottom of the screen */}
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
+                            <a name="subscribe"></a>
                             <div className="site-foot-nav-left">
                                 Subscribe to the lee.af Newsletter
                             </div>
                             <div className="site-foot-nav-right">
-                                <a name="subscribe"></a>
                                 <form name="Subscribe Form" method="POST" data-netlify="true">
                                     <input type="hidden" name="form-name" value="Subscribe Form" />
                                     <input type="email" name="email" placeholder="email address" />
