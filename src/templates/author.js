@@ -47,8 +47,9 @@ const Author = ({ data, location, pageContext }) => {
                             Random thoughts on <a href="/tag/software">software</a>,&nbsp;
                             <a href="/tag/vc">venture capital</a>, and&nbsp;
                             <a href="/tag/olin">engineering education at Olin College of Engineering</a>.
-                            Most posts are 30m of thought put to paper. Ones that are not terrible will
-                            show up as <a href="/featured/">Featured</a>.&nbsp;
+                            Most posts are 30m of thought put to paper.
+                        </p>
+                        <p>
                             <a hred="#subscribe">Subscribe</a> below!
                         </p>
                     </section>
