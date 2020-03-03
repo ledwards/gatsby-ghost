@@ -4,7 +4,7 @@ module.exports = {
     postsPerPage: 14, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
     siteTitleMeta: `lee.af`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `A blog by Lee Edwards on venture capital, software engineering, and technology`, // This allows an alternative site description for meta data for pages.
+    siteDescriptionMeta: `A blog by Lee Edwards on venture capital, software technology, and engineering education`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image

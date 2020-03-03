@@ -768,6 +768,14 @@ h6 {
     text-decoration: none;
 }
 
+h1.site-banner-title a {
+    color: #fff;
+}
+
+p.site-banner-desc a {
+    color: #fff;
+}
+
 /* Main
 /* ---------------------------------------------------------- */
 
