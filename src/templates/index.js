@@ -23,7 +23,7 @@ const Index = ({ data, location, pageContext }) => {
                 <div className="container">
                     <header className="tag-header">
                         <h1>Latest Posts</h1>
-                        <p>daily 30-minute thoughts</p>
+                        <p>high frequency 30-minute thoughts, mostly unfiltered</p>
                     </header>
                     <section className="post-feed">
                         {posts.map(({ node }) => (
